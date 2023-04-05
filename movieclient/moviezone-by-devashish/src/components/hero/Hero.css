@@ -1,0 +1,89 @@
+.movie-carousel-container {
+    width: 100vw;
+    background-color: mediumspringgreen;
+}
+
+.movie-poster {
+    height: 365px;
+    /* background-position-x: 10%; */
+    /* background-position: 15% 40%; */
+    border: 1px solid gold;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    width: fit-content;
+    position: relative;
+}
+
+.movie-poster>img {
+    height: 100%;
+    /* background-position: 15% 40%; */
+    /* margin: 20%; */
+    width: 100%;
+}
+
+.movie-card-container {
+    height: 550px;
+    background-color: black;
+}
+
+.movie-card {
+    background-repeat: no-repeat;
+    width: 100%;
+    /* margin-top: 35%; */
+    height: 100%;
+    background-size: cover;
+    /* using VAR comes to related image on website */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), var(--img);
+
+}
+
+.movie-detail {
+    position: absolute;
+    top: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+.movie-title {
+    color: gold;
+    display: flex;
+    align-items: center;
+}
+
+.movie-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+.play-button-icon-controller {
+    padding: 0px;
+    margin: 0px;
+    width: 150px;
+}
+
+.play-button-icon {
+    padding: 0px;
+    margin: 0px;
+    color: red;
+    font-size: 3.5rem;
+    transition: 0.3s;
+    cursor: default;
+}
+
+.play-button-icon:hover {
+    font-size: 5rem;
+    color: white;
+}
+
+@media only screen and (max-width: 800px) {
+    .movie-detail {
+        flex-direction: column;
+        align-items: center;
+        top: 20px;
+    }
+
+}
